@@ -1,0 +1,6 @@
+{
+  "name": "Directaurante POS, Comandero, KDS & DirectPrint",
+  "description": "Sistema integral de punto de venta gastronómico con Comandero táctil, KDS multicocina, núcleo financiero y DirectPrint nativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

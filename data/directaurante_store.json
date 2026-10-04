@@ -1,0 +1,1985 @@
+{
+  "restaurants": [
+    {
+      "id": "rest_directaurante_01",
+      "name": "Directaurante Grill & Bar",
+      "legal_name": "Directaurante Operadora Gastronómica S.A.P.I. de C.V.",
+      "currency": "MXN",
+      "tax_rate": 0.16,
+      "created_at": "2026-10-04T21:18:25.053Z"
+    }
+  ],
+  "tables": [
+    {
+      "id": "tbl_1",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Mesa 1",
+      "capacity": 4,
+      "status": "occupied",
+      "active_session_id": "sess_1791148705054_ban0gv",
+      "opened_at": "2026-10-04T21:18:25.054Z",
+      "assigned_waiter": "Mesero Sofía"
+    },
+    {
+      "id": "tbl_2",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Mesa 2",
+      "capacity": 2,
+      "status": "available"
+    },
+    {
+      "id": "tbl_3",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Mesa 3",
+      "capacity": 6,
+      "status": "available"
+    },
+    {
+      "id": "tbl_4",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Mesa 4",
+      "capacity": 4,
+      "status": "available"
+    },
+    {
+      "id": "tbl_5",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Mesa 5",
+      "capacity": 8,
+      "status": "available"
+    },
+    {
+      "id": "tbl_6",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Mesa 6 (Terraza)",
+      "capacity": 4,
+      "status": "available"
+    },
+    {
+      "id": "tbl_7",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Mesa 7 (Terraza)",
+      "capacity": 4,
+      "status": "available"
+    },
+    {
+      "id": "tbl_8",
+      "restaurant_id": "rest_directaurante_01",
+      "number": "Barra 1",
+      "capacity": 3,
+      "status": "available"
+    }
+  ],
+  "table_sessions": [
+    {
+      "id": "sess_1791148705054_ban0gv",
+      "restaurant_id": "rest_directaurante_01",
+      "table_id": "tbl_1",
+      "status": "active",
+      "opened_at": "2026-10-04T21:18:25.054Z",
+      "server_id": "Mesero Sofía",
+      "guest_count": 4,
+      "version": 1,
+      "created_at": "2026-10-04T21:18:25.054Z",
+      "updated_at": "2026-10-04T21:18:25.084Z"
+    }
+  ],
+  "guest_subaccounts": [
+    {
+      "id": "seat_1791148705054_42iv8e",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "table_id": "tbl_1",
+      "seat_number": "1.1",
+      "display_name": "Carlos",
+      "allergy_ids": [],
+      "status": "active",
+      "created_at": "2026-10-04T21:18:25.054Z",
+      "updated_at": "2026-10-04T21:18:25.054Z"
+    },
+    {
+      "id": "seat_1791148705054_64pew5",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "table_id": "tbl_1",
+      "seat_number": "1.2",
+      "display_name": "Carlos",
+      "allergy_ids": [],
+      "status": "active",
+      "created_at": "2026-10-04T21:18:25.054Z",
+      "updated_at": "2026-10-04T21:18:25.054Z"
+    },
+    {
+      "id": "seat_1791148705054_q6j1fj",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "table_id": "tbl_1",
+      "seat_number": "1.3",
+      "display_name": "Luis",
+      "allergy_ids": [],
+      "status": "active",
+      "created_at": "2026-10-04T21:18:25.054Z",
+      "updated_at": "2026-10-04T21:18:25.054Z"
+    },
+    {
+      "id": "seat_1791148705054_fmltdj",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "table_id": "tbl_1",
+      "seat_number": "1.4",
+      "display_name": "Ana",
+      "allergy_ids": [
+        "alg_cacahuate"
+      ],
+      "status": "active",
+      "created_at": "2026-10-04T21:18:25.054Z",
+      "updated_at": "2026-10-04T21:18:25.054Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_boneless_bbq",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Boneless BBQ",
+      "category": "Entradas",
+      "description": "Trozos crujientes de pechuga de pollo bañados en salsa BBQ ahumada con aderezo ranch.",
+      "price_cents": 14000,
+      "ingredient_ids": [
+        "ing_pollo",
+        "ing_bbq",
+        "ing_gluten",
+        "ing_lacteos"
+      ],
+      "destination_station": "kitchen",
+      "preparation_time_minutes": 15,
+      "target_preparation_seconds": 900,
+      "available_modifiers": [
+        "Salsa aparte",
+        "Extra aderezo ranch",
+        "Poco picante",
+        "Bien dorados"
+      ],
+      "available": true
+    },
+    {
+      "id": "prod_cerveza",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Cerveza Nacional Ultra",
+      "category": "Bebidas",
+      "description": "Cerveza clara bien fría de 355 ml.",
+      "price_cents": 4500,
+      "ingredient_ids": [
+        "ing_gluten"
+      ],
+      "destination_station": "bar",
+      "preparation_time_minutes": 2,
+      "target_preparation_seconds": 120,
+      "available_modifiers": [
+        "Vaso frío",
+        "Con limón y sal",
+        "Sin vaso"
+      ],
+      "available": true
+    },
+    {
+      "id": "prod_hamburguesa",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Hamburguesa Clásica Angus",
+      "category": "Platillos",
+      "description": "200g de carne de res Angus, queso cheddar fundido, lechuga, jitomate y pan brioche.",
+      "price_cents": 15000,
+      "ingredient_ids": [
+        "ing_res",
+        "ing_gluten",
+        "ing_lacteos"
+      ],
+      "destination_station": "kitchen",
+      "preparation_time_minutes": 15,
+      "target_preparation_seconds": 900,
+      "available_modifiers": [
+        "+ Tocino",
+        "- Cebolla",
+        "Salsa aparte",
+        "Término medio",
+        "Bien cocida",
+        "Sin jitomate"
+      ],
+      "available": true
+    },
+    {
+      "id": "prod_burritos",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Burritos Norteños de Res",
+      "category": "Platillos",
+      "description": "Tortilla de harina rellena de carne asada con frijoles refritos y queso asadero.",
+      "price_cents": 11000,
+      "ingredient_ids": [
+        "ing_res",
+        "ing_gluten",
+        "ing_lacteos"
+      ],
+      "destination_station": "kitchen",
+      "preparation_time_minutes": 12,
+      "target_preparation_seconds": 720,
+      "available_modifiers": [
+        "Sin cebolla",
+        "Salsa verde aparte",
+        "Cortar a la mitad",
+        "Extra queso"
+      ],
+      "available": true
+    },
+    {
+      "id": "prod_michelada",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Michelada Especial",
+      "category": "Bebidas",
+      "description": "Vaso escarchado con limón, sal, salsas negras de la casa y clamato preparado.",
+      "price_cents": 9000,
+      "ingredient_ids": [
+        "ing_gluten",
+        "ing_soya"
+      ],
+      "destination_station": "bar",
+      "preparation_time_minutes": 4,
+      "target_preparation_seconds": 240,
+      "available_modifiers": [
+        "Poco picante",
+        "Sin clamato",
+        "Extra limón",
+        "Escarchado con tajín"
+      ],
+      "available": true
+    },
+    {
+      "id": "prod_ensalada",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Ensalada César con Pollo",
+      "category": "Platillos",
+      "description": "Lechuga orejona fresca, pechuga a la plancha, crutones dorados y queso parmesano.",
+      "price_cents": 13500,
+      "ingredient_ids": [
+        "ing_pollo",
+        "ing_lacteos",
+        "ing_gluten"
+      ],
+      "destination_station": "kitchen",
+      "preparation_time_minutes": 8,
+      "target_preparation_seconds": 480,
+      "available_modifiers": [
+        "Aderezo aparte",
+        "Sin crutones",
+        "Pechuga bien dorada"
+      ],
+      "available": true
+    },
+    {
+      "id": "prod_papas",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Papas a la Francesa Crujientes",
+      "category": "Snacks",
+      "description": "Papas corte delgado sazonadas con paprika y sal de mar.",
+      "price_cents": 6000,
+      "ingredient_ids": [],
+      "destination_station": "kitchen",
+      "preparation_time_minutes": 8,
+      "available": true
+    },
+    {
+      "id": "prod_agua",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Agua Embotellada 600ml",
+      "category": "Bebidas",
+      "description": "Agua purificada natural de manantial.",
+      "price_cents": 3500,
+      "ingredient_ids": [],
+      "destination_station": "bar",
+      "preparation_time_minutes": 1,
+      "available": true
+    },
+    {
+      "id": "prod_brownie",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Brownie de Chocolate y Cacahuate",
+      "category": "Postres",
+      "description": "Brownie tibio con nueces y trocitos de cacahuate tostado servido con helado.",
+      "price_cents": 8500,
+      "ingredient_ids": [
+        "ing_cacahuate",
+        "ing_nuez",
+        "ing_gluten",
+        "ing_lacteos",
+        "ing_huevo"
+      ],
+      "destination_station": "kitchen",
+      "preparation_time_minutes": 6,
+      "available": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1791148705054_egl53i",
+      "restaurant_id": "rest_directaurante_01",
+      "table_id": "tbl_1",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "ticket_number": "Comanda #001",
+      "order_type": "dine_in",
+      "status": "open",
+      "subtotal_cents": 18500,
+      "tax_cents": 2960,
+      "total_cents": 21460,
+      "server_id": "Mesero Sofía",
+      "created_at": "2026-10-04T21:18:25.054Z"
+    },
+    {
+      "id": "ord_1791148705077_4xg1s0",
+      "restaurant_id": "rest_directaurante_01",
+      "table_id": "tbl_1",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "ticket_number": "Comanda #002",
+      "order_type": "dine_in",
+      "status": "open",
+      "subtotal_cents": 15000,
+      "tax_cents": 2400,
+      "total_cents": 17400,
+      "server_id": "Mesero Sofía",
+      "notes": "Ronda Carlos B",
+      "created_at": "2026-10-04T21:18:25.077Z"
+    },
+    {
+      "id": "ord_1791148705078_fzqfan",
+      "restaurant_id": "rest_directaurante_01",
+      "table_id": "tbl_1",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "ticket_number": "Comanda #003",
+      "order_type": "dine_in",
+      "status": "open",
+      "subtotal_cents": 31000,
+      "tax_cents": 4960,
+      "total_cents": 35960,
+      "server_id": "Mesero Sofía",
+      "notes": "Ronda Luis",
+      "created_at": "2026-10-04T21:18:25.078Z"
+    }
+  ],
+  "order_items": [
+    {
+      "id": "item_1791148705055_i4g0ve",
+      "order_id": "ord_1791148705054_egl53i",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "restaurant_id": "rest_directaurante_01",
+      "product_id": "prod_boneless_bbq",
+      "product_name": "Boneless BBQ",
+      "guest_subaccount_id": "seat_1791148705054_42iv8e",
+      "seat_number": "1.1",
+      "guest_name": "Carlos",
+      "quantity": 1,
+      "unit_price_cents": 14000,
+      "total_price_cents": 14000,
+      "destination_station": "kitchen",
+      "notes": "Bien dorados",
+      "modifiers": [],
+      "priority": "normal",
+      "target_preparation_seconds": 900,
+      "preparation_status": "pending",
+      "status_history": [
+        {
+          "status": "pending",
+          "changed_by": "Mesero Sofía",
+          "timestamp": "2026-10-04T21:18:25.055Z",
+          "notes": "Registrado en Comanda #001."
+        }
+      ],
+      "created_at": "2026-10-04T21:18:25.055Z"
+    },
+    {
+      "id": "item_1791148705076_l3ygg1",
+      "order_id": "ord_1791148705054_egl53i",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "restaurant_id": "rest_directaurante_01",
+      "product_id": "prod_cerveza",
+      "product_name": "Cerveza Nacional Ultra",
+      "guest_subaccount_id": "seat_1791148705054_42iv8e",
+      "seat_number": "1.1",
+      "guest_name": "Carlos",
+      "quantity": 1,
+      "unit_price_cents": 4500,
+      "total_price_cents": 4500,
+      "destination_station": "bar",
+      "notes": "Helada",
+      "modifiers": [],
+      "priority": "normal",
+      "target_preparation_seconds": 120,
+      "preparation_status": "pending",
+      "status_history": [
+        {
+          "status": "pending",
+          "changed_by": "Mesero Sofía",
+          "timestamp": "2026-10-04T21:18:25.076Z",
+          "notes": "Registrado en Comanda #001."
+        }
+      ],
+      "created_at": "2026-10-04T21:18:25.076Z"
+    },
+    {
+      "id": "item_1791148705078_zvld3k",
+      "order_id": "ord_1791148705077_4xg1s0",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "restaurant_id": "rest_directaurante_01",
+      "product_id": "prod_hamburguesa",
+      "product_name": "Hamburguesa Clásica Angus",
+      "guest_subaccount_id": "seat_1791148705054_64pew5",
+      "seat_number": "1.2",
+      "guest_name": "Carlos",
+      "quantity": 1,
+      "unit_price_cents": 15000,
+      "total_price_cents": 15000,
+      "destination_station": "kitchen",
+      "notes": "Término medio",
+      "modifiers": [],
+      "priority": "normal",
+      "target_preparation_seconds": 900,
+      "preparation_status": "pending",
+      "status_history": [
+        {
+          "status": "pending",
+          "changed_by": "Mesero Sofía",
+          "timestamp": "2026-10-04T21:18:25.078Z",
+          "notes": "Registrado en Comanda #002."
+        }
+      ],
+      "created_at": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "item_1791148705078_mnh08i",
+      "order_id": "ord_1791148705078_fzqfan",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "restaurant_id": "rest_directaurante_01",
+      "product_id": "prod_burritos",
+      "product_name": "Burritos Norteños de Res",
+      "guest_subaccount_id": "seat_1791148705054_q6j1fj",
+      "seat_number": "1.3",
+      "guest_name": "Luis",
+      "quantity": 2,
+      "unit_price_cents": 11000,
+      "total_price_cents": 22000,
+      "destination_station": "kitchen",
+      "notes": "Salsa aparte",
+      "modifiers": [],
+      "priority": "normal",
+      "target_preparation_seconds": 720,
+      "preparation_status": "pending",
+      "status_history": [
+        {
+          "status": "pending",
+          "changed_by": "Mesero Sofía",
+          "timestamp": "2026-10-04T21:18:25.078Z",
+          "notes": "Registrado en Comanda #003."
+        }
+      ],
+      "created_at": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "item_1791148705078_u9rejf",
+      "order_id": "ord_1791148705078_fzqfan",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "restaurant_id": "rest_directaurante_01",
+      "product_id": "prod_michelada",
+      "product_name": "Michelada Especial",
+      "guest_subaccount_id": "seat_1791148705054_q6j1fj",
+      "seat_number": "1.3",
+      "guest_name": "Luis",
+      "quantity": 1,
+      "unit_price_cents": 9000,
+      "total_price_cents": 9000,
+      "destination_station": "bar",
+      "modifiers": [],
+      "priority": "normal",
+      "target_preparation_seconds": 240,
+      "preparation_status": "pending",
+      "status_history": [
+        {
+          "status": "pending",
+          "changed_by": "Mesero Sofía",
+          "timestamp": "2026-10-04T21:18:25.078Z",
+          "notes": "Registrado en Comanda #003."
+        }
+      ],
+      "created_at": "2026-10-04T21:18:25.078Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_1791148705084_v4hm14",
+      "restaurant_id": "rest_directaurante_01",
+      "table_session_id": "sess_1791148705054_ban0gv",
+      "table_id": "tbl_1",
+      "order_id": "ord_1791148705054_egl53i",
+      "guest_subaccount_id": "seat_1791148705054_42iv8e",
+      "amount_cents": 21460,
+      "method": "cash",
+      "created_at": "2026-10-04T21:18:25.084Z",
+      "cashier": "Cajero Roberto",
+      "reference": "TICKET_C1"
+    }
+  ],
+  "cash_shifts": [
+    {
+      "id": "shift_init_01",
+      "restaurant_id": "rest_directaurante_01",
+      "opened_by": "Cajero Principal (Admin)",
+      "opened_at": "2026-10-04T21:18:25.053Z",
+      "initial_float_cents": 200000,
+      "status": "closed",
+      "expected_cash_cents": 221460,
+      "notes": "Turno matutino abierto con fondo estándar. | Cierre: Cierre automático previo",
+      "closed_by": "Admin",
+      "closed_at": "2026-10-04T21:18:25.085Z",
+      "actual_cash_cents": 221460,
+      "difference_cents": 0
+    },
+    {
+      "id": "shift_1791148705086_8ph59r",
+      "restaurant_id": "rest_directaurante_01",
+      "opened_by": "Cajero Roberto",
+      "opened_at": "2026-10-04T21:18:25.086Z",
+      "initial_float_cents": 150000,
+      "status": "closed",
+      "expected_cash_cents": 132000,
+      "notes": "Fondo estándar | Cierre: Cierre auditado",
+      "closed_by": "Cajero Roberto",
+      "closed_at": "2026-10-04T21:18:25.087Z",
+      "actual_cash_cents": 333700,
+      "difference_cents": 201700
+    }
+  ],
+  "cash_movements": [
+    {
+      "id": "mov_init_01",
+      "shift_id": "shift_init_01",
+      "restaurant_id": "rest_directaurante_01",
+      "type": "opening_float",
+      "amount_cents": 200000,
+      "description": "Fondo de apertura de caja",
+      "performed_by": "Cajero Principal",
+      "timestamp": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "id": "mov_1791148705084_pnqmm0",
+      "shift_id": "shift_init_01",
+      "restaurant_id": "rest_directaurante_01",
+      "type": "sale",
+      "amount_cents": 21460,
+      "description": "Cobro en efectivo - Sesión sess_1791148705054_ban0gv (Mesa tbl_1) [Comensal seat_1791148705054_42iv8e]",
+      "performed_by": "Cajero Roberto",
+      "timestamp": "2026-10-04T21:18:25.084Z",
+      "source_payment_id": "pay_1791148705084_v4hm14"
+    },
+    {
+      "id": "mov_1791148705086_ukbfph",
+      "shift_id": "shift_1791148705086_8ph59r",
+      "restaurant_id": "rest_directaurante_01",
+      "type": "opening_float",
+      "amount_cents": 150000,
+      "description": "Fondo de apertura de turno",
+      "performed_by": "Cajero Roberto",
+      "timestamp": "2026-10-04T21:18:25.086Z"
+    },
+    {
+      "id": "mov_1791148705087_7skeyq",
+      "shift_id": "shift_1791148705086_8ph59r",
+      "restaurant_id": "rest_directaurante_01",
+      "type": "expense",
+      "amount_cents": 18000,
+      "description": "Compra de hielo",
+      "performed_by": "Cajero Roberto",
+      "timestamp": "2026-10-04T21:18:25.087Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "aud_1791148705088_krplv7",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705088_u28vmw",
+      "actor": "Usuario",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705088_u28vmw",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_cashier_01",
+        "printer_name": "Impresora de Cuentas y Tickets Caja",
+        "job_type": "cash_shift_cut",
+        "title": "[REIMPRESION] Corte Z de Turno #6_8ph59r",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.088Z",
+        "completed_at": "2026-10-04T21:18:25.088Z",
+        "raw_content": "*** COPIA DE REIMPRESION ***\n        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #6_8ph59r     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:                Cajero Roberto\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                Cajero Roberto\n==========================================\n(+) FONDO INICIAL DE CAJA:    $1500.00 MXN\n(+) VENTAS EN EFECTIVO:          $0.00 MXN\n(-) GASTOS DE CAJA REGISTRADOS: $180.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $1320.00 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $3337.00 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO: SOBRANTE (+$2017.00 MXN)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:     $0.00 MXN\n------------------------------------------\nOBSERVACIONES: Fondo estándar | Cierre: Cierre auditado\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n              CAJERO ROBERTO              \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "shift_id": "shift_1791148705086_8ph59r",
+          "total_cents": 333700,
+          "reprint_count": 1
+        }
+      },
+      "notes": "Impresión cash_shift_cut enviada exitosamente a \"Impresora de Cuentas y Tickets Caja\".",
+      "timestamp": "2026-10-04T21:18:25.088Z"
+    },
+    {
+      "id": "aud_1791148705088_9ffqut",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705088_h7ka34",
+      "actor": "Cajero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705088_h7ka34",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_cashier_01",
+        "printer_name": "Impresora de Cuentas y Tickets Caja",
+        "job_type": "cash_shift_cut",
+        "title": "Corte Z de Turno #6_8ph59r",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.088Z",
+        "completed_at": "2026-10-04T21:18:25.088Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #6_8ph59r     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:                Cajero Roberto\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                Cajero Roberto\n==========================================\n(+) FONDO INICIAL DE CAJA:    $1500.00 MXN\n(+) VENTAS EN EFECTIVO:          $0.00 MXN\n(-) GASTOS DE CAJA REGISTRADOS: $180.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $1320.00 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $3337.00 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO: SOBRANTE (+$2017.00 MXN)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:     $0.00 MXN\n------------------------------------------\nOBSERVACIONES: Fondo estándar | Cierre: Cierre auditado\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n              CAJERO ROBERTO              \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "shift_id": "shift_1791148705086_8ph59r",
+          "total_cents": 333700
+        }
+      },
+      "notes": "Impresión cash_shift_cut enviada exitosamente a \"Impresora de Cuentas y Tickets Caja\".",
+      "timestamp": "2026-10-04T21:18:25.088Z"
+    },
+    {
+      "id": "aud_1791148705087_m3c06q",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705087_5x0k0c",
+      "actor": "Cajero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705087_5x0k0c",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_cashier_01",
+        "printer_name": "Impresora de Cuentas y Tickets Caja",
+        "job_type": "cash_shift_cut",
+        "title": "Corte Z de Turno #6_8ph59r",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.087Z",
+        "completed_at": "2026-10-04T21:18:25.087Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #6_8ph59r     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:                Cajero Roberto\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                Cajero Roberto\n==========================================\n(+) FONDO INICIAL DE CAJA:    $1500.00 MXN\n(+) VENTAS EN EFECTIVO:          $0.00 MXN\n(-) GASTOS DE CAJA REGISTRADOS: $180.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $1320.00 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $3337.00 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO: SOBRANTE (+$2017.00 MXN)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:     $0.00 MXN\n------------------------------------------\nOBSERVACIONES: Fondo estándar | Cierre: Cierre auditado\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n              CAJERO ROBERTO              \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "shift_id": "shift_1791148705086_8ph59r",
+          "total_cents": 333700
+        }
+      },
+      "notes": "Impresión cash_shift_cut enviada exitosamente a \"Impresora de Cuentas y Tickets Caja\".",
+      "timestamp": "2026-10-04T21:18:25.087Z"
+    },
+    {
+      "id": "aud_1791148705087_k7931s",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "cash_shift_closed",
+      "entity_type": "cash_shift",
+      "entity_id": "shift_1791148705086_8ph59r",
+      "actor": "Cajero Roberto",
+      "previous_state": {
+        "id": "shift_1791148705086_8ph59r",
+        "restaurant_id": "rest_directaurante_01",
+        "opened_by": "Cajero Roberto",
+        "opened_at": "2026-10-04T21:18:25.086Z",
+        "initial_float_cents": 150000,
+        "status": "open",
+        "expected_cash_cents": 132000,
+        "notes": "Fondo estándar"
+      },
+      "new_state": {
+        "id": "shift_1791148705086_8ph59r",
+        "restaurant_id": "rest_directaurante_01",
+        "opened_by": "Cajero Roberto",
+        "opened_at": "2026-10-04T21:18:25.086Z",
+        "initial_float_cents": 150000,
+        "status": "closed",
+        "expected_cash_cents": 132000,
+        "notes": "Fondo estándar | Cierre: Cierre auditado",
+        "closed_by": "Cajero Roberto",
+        "closed_at": "2026-10-04T21:18:25.087Z",
+        "actual_cash_cents": 333700,
+        "difference_cents": 201700
+      },
+      "notes": "Turno de caja cerrado. Esperado: $1320.00, Contado: $3337.00, Diferencia: $2017.00.",
+      "timestamp": "2026-10-04T21:18:25.087Z"
+    },
+    {
+      "id": "aud_1791148705087_qo04vt",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "expense_created",
+      "entity_type": "cash_shift",
+      "entity_id": "shift_1791148705086_8ph59r",
+      "actor": "Cajero Roberto",
+      "previous_state": null,
+      "new_state": {
+        "id": "mov_1791148705087_7skeyq",
+        "shift_id": "shift_1791148705086_8ph59r",
+        "restaurant_id": "rest_directaurante_01",
+        "type": "expense",
+        "amount_cents": 18000,
+        "description": "Compra de hielo",
+        "performed_by": "Cajero Roberto",
+        "timestamp": "2026-10-04T21:18:25.087Z"
+      },
+      "notes": "Movimiento expense por $180.00: Compra de hielo",
+      "timestamp": "2026-10-04T21:18:25.087Z"
+    },
+    {
+      "id": "aud_1791148705086_wfj00d",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "cash_shift_opened",
+      "entity_type": "cash_shift",
+      "entity_id": "shift_1791148705086_8ph59r",
+      "actor": "Cajero Roberto",
+      "previous_state": null,
+      "new_state": {
+        "id": "shift_1791148705086_8ph59r",
+        "restaurant_id": "rest_directaurante_01",
+        "opened_by": "Cajero Roberto",
+        "opened_at": "2026-10-04T21:18:25.086Z",
+        "initial_float_cents": 150000,
+        "status": "open",
+        "expected_cash_cents": 150000,
+        "notes": "Fondo estándar"
+      },
+      "notes": "Turno de caja abierto con fondo inicial de $1500.00.",
+      "timestamp": "2026-10-04T21:18:25.087Z"
+    },
+    {
+      "id": "aud_1791148705086_ss88r9",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705086_d4bv82",
+      "actor": "Cajero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705086_d4bv82",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_cashier_01",
+        "printer_name": "Impresora de Cuentas y Tickets Caja",
+        "job_type": "cash_shift_cut",
+        "title": "Corte Z de Turno #_init_01",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.086Z",
+        "completed_at": "2026-10-04T21:18:25.086Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #_init_01     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:      Cajero Principal (Admin)\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                         Admin\n==========================================\n(+) FONDO INICIAL DE CAJA:    $2000.00 MXN\n(+) VENTAS EN EFECTIVO:        $214.60 MXN\n(-) GASTOS DE CAJA REGISTRADOS:  $0.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $2214.60 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $2214.60 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO:     CUADRADO ($0.00)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:   $214.60 MXN\n------------------------------------------\nOBSERVACIONES: Turno matutino abierto con fondo estándar. | Cierre: Cierre automático previo\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n                  ADMIN                   \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "shift_id": "shift_init_01",
+          "total_cents": 221460
+        }
+      },
+      "notes": "Impresión cash_shift_cut enviada exitosamente a \"Impresora de Cuentas y Tickets Caja\".",
+      "timestamp": "2026-10-04T21:18:25.086Z"
+    },
+    {
+      "id": "aud_1791148705085_lhkc67",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "cash_shift_closed",
+      "entity_type": "cash_shift",
+      "entity_id": "shift_init_01",
+      "actor": "Admin",
+      "previous_state": {
+        "id": "shift_init_01",
+        "restaurant_id": "rest_directaurante_01",
+        "opened_by": "Cajero Principal (Admin)",
+        "opened_at": "2026-10-04T21:18:25.053Z",
+        "initial_float_cents": 200000,
+        "status": "open",
+        "expected_cash_cents": 221460,
+        "notes": "Turno matutino abierto con fondo estándar."
+      },
+      "new_state": {
+        "id": "shift_init_01",
+        "restaurant_id": "rest_directaurante_01",
+        "opened_by": "Cajero Principal (Admin)",
+        "opened_at": "2026-10-04T21:18:25.053Z",
+        "initial_float_cents": 200000,
+        "status": "closed",
+        "expected_cash_cents": 221460,
+        "notes": "Turno matutino abierto con fondo estándar. | Cierre: Cierre automático previo",
+        "closed_by": "Admin",
+        "closed_at": "2026-10-04T21:18:25.085Z",
+        "actual_cash_cents": 221460,
+        "difference_cents": 0
+      },
+      "notes": "Turno de caja cerrado. Esperado: $2214.60, Contado: $2214.60, Diferencia: $0.00.",
+      "timestamp": "2026-10-04T21:18:25.085Z"
+    },
+    {
+      "id": "aud_1791148705085_5e49hk",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705085_2u1pqm",
+      "actor": "Cajero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705085_2u1pqm",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_cashier_01",
+        "printer_name": "Impresora de Cuentas y Tickets Caja",
+        "job_type": "payment_receipt",
+        "title": "Recibo de Pago #4_v4hm14 — Mesa 1",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.085Z",
+        "completed_at": "2026-10-04T21:18:25.085Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n      COMPROBANTE DE PAGO REGISTRADO      \n==========================================\nRECIBO: #4_v4hm14                 09:18 PM\nMESA: Mesa 1               SESION: #ban0gv\nCAJERO: Cajero Roberto           10/4/2026\nPAGO DIRIGIDO A:              [1.1] Carlos\n------------------------------------------\nMETODO DE PAGO:            EFECTIVO (CASH)\nAUTORIZACION / REF:              TICKET_C1\nIMPORTE COBRADO:               $214.60 MXN\n------------------------------------------\nSALDO RESTANTE DE MESA:        $533.60 MXN\n==========================================\nCONSERVE ESTE COMPROBANTE PARA CUALQUIER A\n SISTEMA DIRECTAURANTE POS & DIRECTPRINT  \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "payment_id": "pay_1791148705084_v4hm14",
+          "total_cents": 21460
+        }
+      },
+      "notes": "Impresión payment_receipt enviada exitosamente a \"Impresora de Cuentas y Tickets Caja\".",
+      "timestamp": "2026-10-04T21:18:25.085Z"
+    },
+    {
+      "id": "aud_1791148705084_1btyun",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705084_ukokqm",
+      "actor": "Cajero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705084_ukokqm",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_cashier_01",
+        "printer_name": "Impresora de Cuentas y Tickets Caja",
+        "job_type": "payment_receipt",
+        "title": "Recibo de Pago #4_v4hm14 — Mesa 1",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.084Z",
+        "completed_at": "2026-10-04T21:18:25.084Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n      COMPROBANTE DE PAGO REGISTRADO      \n==========================================\nRECIBO: #4_v4hm14                 09:18 PM\nMESA: Mesa 1               SESION: #ban0gv\nCAJERO: Cajero Roberto           10/4/2026\nPAGO DIRIGIDO A:              [1.1] Carlos\n------------------------------------------\nMETODO DE PAGO:            EFECTIVO (CASH)\nAUTORIZACION / REF:              TICKET_C1\nIMPORTE COBRADO:               $214.60 MXN\n------------------------------------------\nSALDO RESTANTE DE MESA:        $533.60 MXN\n==========================================\nCONSERVE ESTE COMPROBANTE PARA CUALQUIER A\n SISTEMA DIRECTAURANTE POS & DIRECTPRINT  \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "payment_id": "pay_1791148705084_v4hm14",
+          "total_cents": 21460
+        }
+      },
+      "notes": "Impresión payment_receipt enviada exitosamente a \"Impresora de Cuentas y Tickets Caja\".",
+      "timestamp": "2026-10-04T21:18:25.084Z"
+    },
+    {
+      "id": "aud_1791148705084_kd3ozr",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "payment_created",
+      "entity_type": "payment",
+      "entity_id": "pay_1791148705084_v4hm14",
+      "actor": "Cajero Roberto",
+      "previous_state": null,
+      "new_state": {
+        "id": "pay_1791148705084_v4hm14",
+        "restaurant_id": "rest_directaurante_01",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "table_id": "tbl_1",
+        "order_id": "ord_1791148705054_egl53i",
+        "guest_subaccount_id": "seat_1791148705054_42iv8e",
+        "amount_cents": 21460,
+        "method": "cash",
+        "created_at": "2026-10-04T21:18:25.084Z",
+        "cashier": "Cajero Roberto",
+        "reference": "TICKET_C1"
+      },
+      "notes": "Pago de $214.60 registrado vía cash en sesión sess_1791148705054_ban0gv.",
+      "timestamp": "2026-10-04T21:18:25.084Z"
+    },
+    {
+      "id": "aud_1791148705083_wpk4el",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705083_rz8ksa",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705083_rz8ksa",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_cashier_01",
+        "printer_name": "Impresora de Cuentas y Tickets Caja",
+        "job_type": "pre_bill",
+        "title": "Pre-cuenta Mesa 1 (Sesión #ban0gv)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.083Z",
+        "completed_at": "2026-10-04T21:18:25.083Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \nDirectaurante Operadora Gastronómica S.A.P\n      ESTADO DE CUENTA / PRE-CUENTA       \n==========================================\nMESA: Mesa 1               SESION: #ban0gv\nATENDIO: Mesero Sofía             09:18 PM\nFECHA: 10/4/2026         EXPEDIDA EN SALON\n==========================================\n>> COMENSAL [1.1] CARLOS\n------------------------------------------\n1 Boneless BBQ                 $140.00 MXN\n1 Cerveza Nacional Ultra        $45.00 MXN\n   Subtotal Comensal:          $185.00 MXN\n\n>> COMENSAL [1.2] CARLOS\n------------------------------------------\n1 Hamburguesa Clásica Angus    $150.00 MXN\n   Subtotal Comensal:          $150.00 MXN\n\n>> COMENSAL [1.3] LUIS\n------------------------------------------\n2 Burritos Norteños de Res     $220.00 MXN\n1 Michelada Especial            $90.00 MXN\n   Subtotal Comensal:          $310.00 MXN\n\n>> COMENSAL [1.4] ANA\n------------------------------------------\n   (Sin consumos registrados)\n   Subtotal Comensal:            $0.00 MXN\n\n==========================================\nSUBTOTAL CONSOLIDADO:          $645.00 MXN\nI.V.A. TRASLADADO (16%):       $103.20 MXN\n------------------------------------------\nTOTAL A LIQUIDAR:              $748.20 MXN\n==========================================\nLA PROPINA ES SUGERIDA Y OPCIONAL (10% / 1\n        NO INCLUIDA EN ESTE TOTAL         \n       ¡GRACIAS POR SU PREFERENCIA!       \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "total_cents": 74820
+        }
+      },
+      "notes": "Impresión pre_bill enviada exitosamente a \"Impresora de Cuentas y Tickets Caja\".",
+      "timestamp": "2026-10-04T21:18:25.083Z"
+    },
+    {
+      "id": "aud_1791148705082_bfv3p8",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705082_gxsfba",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705082_gxsfba",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_bar_01",
+        "printer_name": "Comandera Barra y Coctelería",
+        "job_type": "comanda_bar",
+        "title": "Comanda #001 — BAR (Mesa 1)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.082Z",
+        "completed_at": "2026-10-04T21:18:25.082Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n    *** COMANDA DE BARRA & BEBIDAS ***    \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\n1x CERVEZA NACIONAL ULTRA            [1.1]\n   Comensal: Carlos\n   * NOTA: \"Helada\"\n\n------------------------------------------\n             TOTAL BEBIDAS: 1             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "order_ticket_id": "ord_1791148705054_egl53i",
+          "ticket_number": "Comanda #001",
+          "items_count": 1
+        }
+      },
+      "notes": "Impresión comanda_bar enviada exitosamente a \"Comandera Barra y Coctelería\".",
+      "timestamp": "2026-10-04T21:18:25.082Z"
+    },
+    {
+      "id": "aud_1791148705081_61awlo",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705081_0f38z2",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705081_0f38z2",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_kitchen_01",
+        "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+        "job_type": "comanda_kitchen",
+        "title": "Comanda #001 — KITCHEN (Mesa 1)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.081Z",
+        "completed_at": "2026-10-04T21:18:25.081Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n1x BONELESS BBQ                  PENDIENTE\n   --> Para: [1.1 Carlos]\n   * NOTA: \"BIEN DORADOS\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 1       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "order_ticket_id": "ord_1791148705054_egl53i",
+          "ticket_number": "Comanda #001",
+          "items_count": 1
+        }
+      },
+      "notes": "Impresión comanda_kitchen enviada exitosamente a \"Comandera Cocina Caliente (ESC/POS)\".",
+      "timestamp": "2026-10-04T21:18:25.081Z"
+    },
+    {
+      "id": "aud_1791148705081_5lohhi",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705081_sg57j1",
+      "actor": "Admin",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705081_sg57j1",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_kitchen_01",
+        "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+        "job_type": "test",
+        "title": "Ticket de Prueba — Comandera Cocina Caliente (ESC/POS)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.081Z",
+        "completed_at": "2026-10-04T21:18:25.081Z",
+        "raw_content": "      DIRECTAURANTE DIRECTPRINT v1.0      \n  *** TICKET DE PRUEBA DE IMPRESION ***   \n==========================================\nIMPRESORA: Comandera Cocina Caliente (ESC/POS)\nESTACION:                          KITCHEN\nDIRECCION:                   192.168.1.201\nANCHO PAPEL:                80mm (42 cols)\nFECHA / HORA:                   9:18:25 PM\n------------------------------------------\n          Caracteres de Prueba:           \n  ABCDEFGHIJKLMNÑOPQRSTUVWXYZ 0123456789  \n  abcdefghijklmnñopqrstuvwxyz !@#$%^&*()  \n------------------------------------------\n      ¡COMUNICACION ESC/POS EXITOSA!      \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {}
+      },
+      "notes": "Impresión test enviada exitosamente a \"Comandera Cocina Caliente (ESC/POS)\".",
+      "timestamp": "2026-10-04T21:18:25.081Z"
+    },
+    {
+      "id": "aud_1791148705079_7ndjpl",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705079_r3hnb2",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705079_r3hnb2",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_bar_01",
+        "printer_name": "Comandera Barra y Coctelería",
+        "job_type": "comanda_bar",
+        "title": "Comanda #003 — BAR (Mesa 1)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.079Z",
+        "completed_at": "2026-10-04T21:18:25.079Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n    *** COMANDA DE BARRA & BEBIDAS ***    \n==========================================\nMESA: Mesa 1                  Comanda #003\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\n1x MICHELADA ESPECIAL                [1.3]\n   Comensal: Luis\n\n------------------------------------------\n             TOTAL BEBIDAS: 1             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "order_ticket_id": "ord_1791148705078_fzqfan",
+          "ticket_number": "Comanda #003",
+          "items_count": 1
+        }
+      },
+      "notes": "Impresión comanda_bar enviada exitosamente a \"Comandera Barra y Coctelería\".",
+      "timestamp": "2026-10-04T21:18:25.079Z"
+    },
+    {
+      "id": "aud_1791148705078_ywqelc",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "order_item_created",
+      "entity_type": "order_item",
+      "entity_id": "item_1791148705078_u9rejf",
+      "actor": "Mesero Sofía",
+      "previous_state": null,
+      "new_state": {
+        "id": "item_1791148705078_u9rejf",
+        "order_id": "ord_1791148705078_fzqfan",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "restaurant_id": "rest_directaurante_01",
+        "product_id": "prod_michelada",
+        "product_name": "Michelada Especial",
+        "guest_subaccount_id": "seat_1791148705054_q6j1fj",
+        "seat_number": "1.3",
+        "guest_name": "Luis",
+        "quantity": 1,
+        "unit_price_cents": 9000,
+        "total_price_cents": 9000,
+        "destination_station": "bar",
+        "modifiers": [],
+        "priority": "normal",
+        "target_preparation_seconds": 240,
+        "preparation_status": "pending",
+        "status_history": [
+          {
+            "status": "pending",
+            "changed_by": "Mesero Sofía",
+            "timestamp": "2026-10-04T21:18:25.078Z",
+            "notes": "Registrado en Comanda #003."
+          }
+        ],
+        "created_at": "2026-10-04T21:18:25.078Z"
+      },
+      "notes": "Item agregado: 1x Michelada Especial a 1.3 (Luis) en Comanda #003.",
+      "timestamp": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "aud_1791148705078_kywi4s",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705078_imo8ej",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705078_imo8ej",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_kitchen_01",
+        "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+        "job_type": "comanda_kitchen",
+        "title": "Comanda #003 — KITCHEN (Mesa 1)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.078Z",
+        "completed_at": "2026-10-04T21:18:25.078Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #003\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n2x BURRITOS NORTEÑOS DE RES      PENDIENTE\n   --> Para: [1.3 Luis]\n   * NOTA: \"SALSA APARTE\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 2       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "order_ticket_id": "ord_1791148705078_fzqfan",
+          "ticket_number": "Comanda #003",
+          "items_count": 1
+        }
+      },
+      "notes": "Impresión comanda_kitchen enviada exitosamente a \"Comandera Cocina Caliente (ESC/POS)\".",
+      "timestamp": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "aud_1791148705078_1qx9s5",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "order_item_created",
+      "entity_type": "order_item",
+      "entity_id": "item_1791148705078_mnh08i",
+      "actor": "Mesero Sofía",
+      "previous_state": null,
+      "new_state": {
+        "id": "item_1791148705078_mnh08i",
+        "order_id": "ord_1791148705078_fzqfan",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "restaurant_id": "rest_directaurante_01",
+        "product_id": "prod_burritos",
+        "product_name": "Burritos Norteños de Res",
+        "guest_subaccount_id": "seat_1791148705054_q6j1fj",
+        "seat_number": "1.3",
+        "guest_name": "Luis",
+        "quantity": 2,
+        "unit_price_cents": 11000,
+        "total_price_cents": 22000,
+        "destination_station": "kitchen",
+        "notes": "Salsa aparte",
+        "modifiers": [],
+        "priority": "normal",
+        "target_preparation_seconds": 720,
+        "preparation_status": "pending",
+        "status_history": [
+          {
+            "status": "pending",
+            "changed_by": "Mesero Sofía",
+            "timestamp": "2026-10-04T21:18:25.078Z",
+            "notes": "Registrado en Comanda #003."
+          }
+        ],
+        "created_at": "2026-10-04T21:18:25.078Z"
+      },
+      "notes": "Item agregado: 2x Burritos Norteños de Res a 1.3 (Luis) en Comanda #003.",
+      "timestamp": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "aud_1791148705078_5jq7b9",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "order_ticket_created",
+      "entity_type": "order",
+      "entity_id": "ord_1791148705078_fzqfan",
+      "actor": "Mesero Sofía",
+      "previous_state": null,
+      "new_state": {
+        "id": "ord_1791148705078_fzqfan",
+        "restaurant_id": "rest_directaurante_01",
+        "table_id": "tbl_1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "ticket_number": "Comanda #003",
+        "order_type": "dine_in",
+        "status": "open",
+        "subtotal_cents": 0,
+        "tax_cents": 0,
+        "total_cents": 0,
+        "server_id": "Mesero Sofía",
+        "notes": "Ronda Luis",
+        "created_at": "2026-10-04T21:18:25.078Z"
+      },
+      "notes": "Nueva comanda Comanda #003 aperturada en sesión sess_1791148705054_ban0gv.",
+      "timestamp": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "aud_1791148705078_mknc1m",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705078_7gxg4w",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705078_7gxg4w",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_kitchen_01",
+        "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+        "job_type": "comanda_kitchen",
+        "title": "Comanda #002 — KITCHEN (Mesa 1)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.078Z",
+        "completed_at": "2026-10-04T21:18:25.078Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #002\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n1x HAMBURGUESA CLÁSICA ANGUS     PENDIENTE\n   --> Para: [1.2 Carlos]\n   * NOTA: \"TÉRMINO MEDIO\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 1       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "order_ticket_id": "ord_1791148705077_4xg1s0",
+          "ticket_number": "Comanda #002",
+          "items_count": 1
+        }
+      },
+      "notes": "Impresión comanda_kitchen enviada exitosamente a \"Comandera Cocina Caliente (ESC/POS)\".",
+      "timestamp": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "aud_1791148705078_enls23",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "order_item_created",
+      "entity_type": "order_item",
+      "entity_id": "item_1791148705078_zvld3k",
+      "actor": "Mesero Sofía",
+      "previous_state": null,
+      "new_state": {
+        "id": "item_1791148705078_zvld3k",
+        "order_id": "ord_1791148705077_4xg1s0",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "restaurant_id": "rest_directaurante_01",
+        "product_id": "prod_hamburguesa",
+        "product_name": "Hamburguesa Clásica Angus",
+        "guest_subaccount_id": "seat_1791148705054_64pew5",
+        "seat_number": "1.2",
+        "guest_name": "Carlos",
+        "quantity": 1,
+        "unit_price_cents": 15000,
+        "total_price_cents": 15000,
+        "destination_station": "kitchen",
+        "notes": "Término medio",
+        "modifiers": [],
+        "priority": "normal",
+        "target_preparation_seconds": 900,
+        "preparation_status": "pending",
+        "status_history": [
+          {
+            "status": "pending",
+            "changed_by": "Mesero Sofía",
+            "timestamp": "2026-10-04T21:18:25.078Z",
+            "notes": "Registrado en Comanda #002."
+          }
+        ],
+        "created_at": "2026-10-04T21:18:25.078Z"
+      },
+      "notes": "Item agregado: 1x Hamburguesa Clásica Angus a 1.2 (Carlos) en Comanda #002.",
+      "timestamp": "2026-10-04T21:18:25.078Z"
+    },
+    {
+      "id": "aud_1791148705077_xe2rzf",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "order_ticket_created",
+      "entity_type": "order",
+      "entity_id": "ord_1791148705077_4xg1s0",
+      "actor": "Mesero Sofía",
+      "previous_state": null,
+      "new_state": {
+        "id": "ord_1791148705077_4xg1s0",
+        "restaurant_id": "rest_directaurante_01",
+        "table_id": "tbl_1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "ticket_number": "Comanda #002",
+        "order_type": "dine_in",
+        "status": "open",
+        "subtotal_cents": 0,
+        "tax_cents": 0,
+        "total_cents": 0,
+        "server_id": "Mesero Sofía",
+        "notes": "Ronda Carlos B",
+        "created_at": "2026-10-04T21:18:25.077Z"
+      },
+      "notes": "Nueva comanda Comanda #002 aperturada en sesión sess_1791148705054_ban0gv.",
+      "timestamp": "2026-10-04T21:18:25.077Z"
+    },
+    {
+      "id": "aud_1791148705077_q6ln3m",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705077_p31zk1",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705077_p31zk1",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_bar_01",
+        "printer_name": "Comandera Barra y Coctelería",
+        "job_type": "comanda_bar",
+        "title": "Comanda #001 — BAR (Mesa 1)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.077Z",
+        "completed_at": "2026-10-04T21:18:25.077Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n    *** COMANDA DE BARRA & BEBIDAS ***    \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\n1x CERVEZA NACIONAL ULTRA            [1.1]\n   Comensal: Carlos\n   * NOTA: \"Helada\"\n\n------------------------------------------\n             TOTAL BEBIDAS: 1             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "order_ticket_id": "ord_1791148705054_egl53i",
+          "ticket_number": "Comanda #001",
+          "items_count": 1
+        }
+      },
+      "notes": "Impresión comanda_bar enviada exitosamente a \"Comandera Barra y Coctelería\".",
+      "timestamp": "2026-10-04T21:18:25.077Z"
+    },
+    {
+      "id": "aud_1791148705076_tvhbue",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "order_item_created",
+      "entity_type": "order_item",
+      "entity_id": "item_1791148705076_l3ygg1",
+      "actor": "Mesero Sofía",
+      "previous_state": null,
+      "new_state": {
+        "id": "item_1791148705076_l3ygg1",
+        "order_id": "ord_1791148705054_egl53i",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "restaurant_id": "rest_directaurante_01",
+        "product_id": "prod_cerveza",
+        "product_name": "Cerveza Nacional Ultra",
+        "guest_subaccount_id": "seat_1791148705054_42iv8e",
+        "seat_number": "1.1",
+        "guest_name": "Carlos",
+        "quantity": 1,
+        "unit_price_cents": 4500,
+        "total_price_cents": 4500,
+        "destination_station": "bar",
+        "notes": "Helada",
+        "modifiers": [],
+        "priority": "normal",
+        "target_preparation_seconds": 120,
+        "preparation_status": "pending",
+        "status_history": [
+          {
+            "status": "pending",
+            "changed_by": "Mesero Sofía",
+            "timestamp": "2026-10-04T21:18:25.076Z",
+            "notes": "Registrado en Comanda #001."
+          }
+        ],
+        "created_at": "2026-10-04T21:18:25.076Z"
+      },
+      "notes": "Item agregado: 1x Cerveza Nacional Ultra a 1.1 (Carlos) en Comanda #001.",
+      "timestamp": "2026-10-04T21:18:25.076Z"
+    },
+    {
+      "id": "aud_1791148705076_p5898a",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "print_job_created",
+      "entity_type": "print_job",
+      "entity_id": "pjob_1791148705076_ql8bdc",
+      "actor": "Mesero",
+      "previous_state": null,
+      "new_state": {
+        "id": "pjob_1791148705076_ql8bdc",
+        "restaurant_id": "rest_directaurante_01",
+        "printer_id": "prn_kitchen_01",
+        "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+        "job_type": "comanda_kitchen",
+        "title": "Comanda #001 — KITCHEN (Mesa 1)",
+        "status": "completed",
+        "created_at": "2026-10-04T21:18:25.076Z",
+        "completed_at": "2026-10-04T21:18:25.076Z",
+        "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n1x BONELESS BBQ                  PENDIENTE\n   --> Para: [1.1 Carlos]\n   * NOTA: \"BIEN DORADOS\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 1       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+        "metadata": {
+          "table_number": "Mesa 1",
+          "table_session_id": "sess_1791148705054_ban0gv",
+          "order_ticket_id": "ord_1791148705054_egl53i",
+          "ticket_number": "Comanda #001",
+          "items_count": 1
+        }
+      },
+      "notes": "Impresión comanda_kitchen enviada exitosamente a \"Comandera Cocina Caliente (ESC/POS)\".",
+      "timestamp": "2026-10-04T21:18:25.076Z"
+    },
+    {
+      "id": "aud_1791148705056_4qm2mh",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "order_item_created",
+      "entity_type": "order_item",
+      "entity_id": "item_1791148705055_i4g0ve",
+      "actor": "Mesero Sofía",
+      "previous_state": null,
+      "new_state": {
+        "id": "item_1791148705055_i4g0ve",
+        "order_id": "ord_1791148705054_egl53i",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "restaurant_id": "rest_directaurante_01",
+        "product_id": "prod_boneless_bbq",
+        "product_name": "Boneless BBQ",
+        "guest_subaccount_id": "seat_1791148705054_42iv8e",
+        "seat_number": "1.1",
+        "guest_name": "Carlos",
+        "quantity": 1,
+        "unit_price_cents": 14000,
+        "total_price_cents": 14000,
+        "destination_station": "kitchen",
+        "notes": "Bien dorados",
+        "modifiers": [],
+        "priority": "normal",
+        "target_preparation_seconds": 900,
+        "preparation_status": "pending",
+        "status_history": [
+          {
+            "status": "pending",
+            "changed_by": "Mesero Sofía",
+            "timestamp": "2026-10-04T21:18:25.055Z",
+            "notes": "Registrado en Comanda #001."
+          }
+        ],
+        "created_at": "2026-10-04T21:18:25.055Z"
+      },
+      "notes": "Item agregado: 1x Boneless BBQ a 1.1 (Carlos) en Comanda #001.",
+      "timestamp": "2026-10-04T21:18:25.056Z"
+    },
+    {
+      "id": "aud_1791148705054_wyyhdy",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "table_opened",
+      "entity_type": "table_session",
+      "entity_id": "sess_1791148705054_ban0gv",
+      "actor": "Mesero Sofía",
+      "previous_state": {
+        "id": "tbl_1",
+        "restaurant_id": "rest_directaurante_01",
+        "number": "Mesa 1",
+        "capacity": 4,
+        "status": "available"
+      },
+      "new_state": {
+        "id": "sess_1791148705054_ban0gv",
+        "restaurant_id": "rest_directaurante_01",
+        "table_id": "tbl_1",
+        "status": "active",
+        "opened_at": "2026-10-04T21:18:25.054Z",
+        "server_id": "Mesero Sofía",
+        "guest_count": 4,
+        "version": 1,
+        "created_at": "2026-10-04T21:18:25.054Z",
+        "updated_at": "2026-10-04T21:18:25.054Z"
+      },
+      "notes": "Sesión iniciada en Mesa 1 con 4 comensales. Comanda #001 generada.",
+      "timestamp": "2026-10-04T21:18:25.055Z"
+    },
+    {
+      "id": "aud_init_1791148705053",
+      "restaurant_id": "rest_directaurante_01",
+      "action": "system_initialized",
+      "entity_type": "plugin",
+      "entity_id": "pos",
+      "actor": "Directaurante Core System",
+      "notes": "Arranque del módulo POS Core v0.1 con datos operacionales reales.",
+      "timestamp": "2026-10-04T21:18:25.053Z"
+    }
+  ],
+  "allergies": [
+    {
+      "id": "alg_cacahuate",
+      "name": "Alergia Grave a Cacahuate y Frutos Secos",
+      "ingredient_ids": [
+        "ing_cacahuate",
+        "ing_nuez"
+      ],
+      "severity": "severe",
+      "description": "Anafilaxia potencial. Requiere exclusión estricta de trazas."
+    },
+    {
+      "id": "alg_gluten",
+      "name": "Intolerancia al Gluten / Celíaco",
+      "ingredient_ids": [
+        "ing_gluten"
+      ],
+      "severity": "moderate",
+      "description": "Requiere preparación en área libre de harinas."
+    },
+    {
+      "id": "alg_mariscos",
+      "name": "Alergia a Mariscos",
+      "ingredient_ids": [
+        "ing_mariscos"
+      ],
+      "severity": "severe",
+      "description": "Reacción alérgica aguda."
+    },
+    {
+      "id": "alg_lacteos",
+      "name": "Intolerancia a Lácteos",
+      "ingredient_ids": [
+        "ing_lacteos"
+      ],
+      "severity": "mild",
+      "description": "Sin queso ni crema."
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "ing_cacahuate",
+      "name": "Cacahuate / Maní",
+      "category": "Frutos secos"
+    },
+    {
+      "id": "ing_nuez",
+      "name": "Nueces",
+      "category": "Frutos secos"
+    },
+    {
+      "id": "ing_gluten",
+      "name": "Gluten / Trigo",
+      "category": "Cereales"
+    },
+    {
+      "id": "ing_lacteos",
+      "name": "Lácteos / Queso",
+      "category": "Lácteos"
+    },
+    {
+      "id": "ing_mariscos",
+      "name": "Mariscos / Camarón",
+      "category": "Pescados y Mariscos"
+    },
+    {
+      "id": "ing_huevo",
+      "name": "Huevo",
+      "category": "Aves"
+    },
+    {
+      "id": "ing_soya",
+      "name": "Soya",
+      "category": "Legumbres"
+    },
+    {
+      "id": "ing_pollo",
+      "name": "Pechuga de Pollo",
+      "category": "Carnes"
+    },
+    {
+      "id": "ing_res",
+      "name": "Carne de Res 100% Angus",
+      "category": "Carnes"
+    },
+    {
+      "id": "ing_bbq",
+      "name": "Salsa BBQ Ahumada",
+      "category": "Salsas"
+    },
+    {
+      "id": "ing_cerdo",
+      "name": "Tocino / Cerdo",
+      "category": "Carnes"
+    },
+    {
+      "id": "ing_chile",
+      "name": "Chile Habanero / Jalapeño",
+      "category": "Especias"
+    }
+  ],
+  "restaurant_plugins": [
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "pos",
+      "enabled": true,
+      "version": "0.1.0",
+      "settings": {},
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "kds",
+      "enabled": true,
+      "version": "0.1.0",
+      "settings": {
+        "sound_alerts": true
+      },
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "cash",
+      "enabled": true,
+      "version": "0.1.0",
+      "settings": {
+        "strict_count": true
+      },
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "directprint",
+      "enabled": true,
+      "version": "0.1.0",
+      "settings": {
+        "auto_ticket": true
+      },
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "directimport",
+      "enabled": true,
+      "version": "0.1.0",
+      "settings": {},
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "inventory",
+      "enabled": false,
+      "version": "0.1.0",
+      "settings": {},
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "loyalty",
+      "enabled": false,
+      "version": "0.1.0",
+      "settings": {},
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "restaurant_id": "rest_directaurante_01",
+      "plugin_id": "ai",
+      "enabled": false,
+      "version": "0.1.0",
+      "settings": {},
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    }
+  ],
+  "printers": [
+    {
+      "id": "prn_kitchen_01",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Comandera Cocina Caliente (ESC/POS)",
+      "connection_type": "ethernet",
+      "address": "192.168.1.201",
+      "port": 9100,
+      "station": "kitchen",
+      "paper_width": 80,
+      "protocol": "esc_pos",
+      "enabled": true,
+      "status": "online",
+      "created_at": "2026-10-04T21:18:25.053Z",
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "id": "prn_bar_01",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Comandera Barra y Coctelería",
+      "connection_type": "ethernet",
+      "address": "192.168.1.202",
+      "port": 9100,
+      "station": "bar",
+      "paper_width": 80,
+      "protocol": "esc_pos",
+      "enabled": true,
+      "status": "online",
+      "created_at": "2026-10-04T21:18:25.053Z",
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    },
+    {
+      "id": "prn_cashier_01",
+      "restaurant_id": "rest_directaurante_01",
+      "name": "Impresora de Cuentas y Tickets Caja",
+      "connection_type": "usb",
+      "address": "/dev/usb/lp0",
+      "port": 9100,
+      "station": "cashier",
+      "paper_width": 80,
+      "protocol": "esc_pos",
+      "enabled": true,
+      "status": "online",
+      "created_at": "2026-10-04T21:18:25.053Z",
+      "updated_at": "2026-10-04T21:18:25.053Z"
+    }
+  ],
+  "printer_routing_rules": [
+    {
+      "id": "rule_kitchen",
+      "restaurant_id": "rest_directaurante_01",
+      "job_type": "comanda_kitchen",
+      "station": "kitchen",
+      "printer_id": "prn_kitchen_01",
+      "categories": [
+        "Platillos",
+        "Entradas",
+        "Postres",
+        "Snacks"
+      ],
+      "auto_print": true
+    },
+    {
+      "id": "rule_bar",
+      "restaurant_id": "rest_directaurante_01",
+      "job_type": "comanda_bar",
+      "station": "bar",
+      "printer_id": "prn_bar_01",
+      "categories": [
+        "Bebidas"
+      ],
+      "auto_print": true
+    },
+    {
+      "id": "rule_pre_bill",
+      "restaurant_id": "rest_directaurante_01",
+      "job_type": "pre_bill",
+      "printer_id": "prn_cashier_01",
+      "auto_print": false
+    },
+    {
+      "id": "rule_payment_receipt",
+      "restaurant_id": "rest_directaurante_01",
+      "job_type": "payment_receipt",
+      "printer_id": "prn_cashier_01",
+      "auto_print": true
+    },
+    {
+      "id": "rule_cash_shift_cut",
+      "restaurant_id": "rest_directaurante_01",
+      "job_type": "cash_shift_cut",
+      "printer_id": "prn_cashier_01",
+      "auto_print": true
+    }
+  ],
+  "print_jobs": [
+    {
+      "id": "pjob_1791148705088_u28vmw",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_cashier_01",
+      "printer_name": "Impresora de Cuentas y Tickets Caja",
+      "job_type": "cash_shift_cut",
+      "title": "[REIMPRESION] Corte Z de Turno #6_8ph59r",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.088Z",
+      "completed_at": "2026-10-04T21:18:25.088Z",
+      "raw_content": "*** COPIA DE REIMPRESION ***\n        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #6_8ph59r     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:                Cajero Roberto\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                Cajero Roberto\n==========================================\n(+) FONDO INICIAL DE CAJA:    $1500.00 MXN\n(+) VENTAS EN EFECTIVO:          $0.00 MXN\n(-) GASTOS DE CAJA REGISTRADOS: $180.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $1320.00 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $3337.00 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO: SOBRANTE (+$2017.00 MXN)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:     $0.00 MXN\n------------------------------------------\nOBSERVACIONES: Fondo estándar | Cierre: Cierre auditado\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n              CAJERO ROBERTO              \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "shift_id": "shift_1791148705086_8ph59r",
+        "total_cents": 333700,
+        "reprint_count": 1
+      }
+    },
+    {
+      "id": "pjob_1791148705088_h7ka34",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_cashier_01",
+      "printer_name": "Impresora de Cuentas y Tickets Caja",
+      "job_type": "cash_shift_cut",
+      "title": "Corte Z de Turno #6_8ph59r",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.088Z",
+      "completed_at": "2026-10-04T21:18:25.088Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #6_8ph59r     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:                Cajero Roberto\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                Cajero Roberto\n==========================================\n(+) FONDO INICIAL DE CAJA:    $1500.00 MXN\n(+) VENTAS EN EFECTIVO:          $0.00 MXN\n(-) GASTOS DE CAJA REGISTRADOS: $180.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $1320.00 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $3337.00 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO: SOBRANTE (+$2017.00 MXN)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:     $0.00 MXN\n------------------------------------------\nOBSERVACIONES: Fondo estándar | Cierre: Cierre auditado\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n              CAJERO ROBERTO              \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "shift_id": "shift_1791148705086_8ph59r",
+        "total_cents": 333700
+      }
+    },
+    {
+      "id": "pjob_1791148705087_5x0k0c",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_cashier_01",
+      "printer_name": "Impresora de Cuentas y Tickets Caja",
+      "job_type": "cash_shift_cut",
+      "title": "Corte Z de Turno #6_8ph59r",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.087Z",
+      "completed_at": "2026-10-04T21:18:25.087Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #6_8ph59r     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:                Cajero Roberto\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                Cajero Roberto\n==========================================\n(+) FONDO INICIAL DE CAJA:    $1500.00 MXN\n(+) VENTAS EN EFECTIVO:          $0.00 MXN\n(-) GASTOS DE CAJA REGISTRADOS: $180.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $1320.00 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $3337.00 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO: SOBRANTE (+$2017.00 MXN)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:     $0.00 MXN\n------------------------------------------\nOBSERVACIONES: Fondo estándar | Cierre: Cierre auditado\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n              CAJERO ROBERTO              \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "shift_id": "shift_1791148705086_8ph59r",
+        "total_cents": 333700
+      }
+    },
+    {
+      "id": "pjob_1791148705086_d4bv82",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_cashier_01",
+      "printer_name": "Impresora de Cuentas y Tickets Caja",
+      "job_type": "cash_shift_cut",
+      "title": "Corte Z de Turno #_init_01",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.086Z",
+      "completed_at": "2026-10-04T21:18:25.086Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \nCORTE DE CAJA / CIERRE DE TURNO (REPORTE Z\n==========================================\nFOLIO TURNO: #_init_01     ESTADO: CERRADO\nAPERTURA:               10/4/2026 09:18 PM\nABIERTO POR:      Cajero Principal (Admin)\nCIERRE:                 10/4/2026 09:18 PM\nCERRADO POR:                         Admin\n==========================================\n(+) FONDO INICIAL DE CAJA:    $2000.00 MXN\n(+) VENTAS EN EFECTIVO:        $214.60 MXN\n(-) GASTOS DE CAJA REGISTRADOS:  $0.00 MXN\n(-) RETIROS DE EFECTIVO:         $0.00 MXN\n------------------------------------------\n(=) EFECTIVO TEORICO ESPERADO: $2214.60 MXN\n(=) EFECTIVO REAL CONTADO (CIEGO): $2214.60 MXN\n------------------------------------------\nDIFERENCIA DE ARQUEO:     CUADRADO ($0.00)\n------------------------------------------\n--- VENTAS EN OTROS MEDIOS (NO EN CAJA) --\nVENTAS TARJETA (TERMINAL):       $0.00 MXN\nVENTAS TRANSFERENCIA (SPEI):     $0.00 MXN\nTOTAL VENTA NO-EFECTIVO:         $0.00 MXN\n==========================================\nGRAN TOTAL VENDIDO EN TURNO:   $214.60 MXN\n------------------------------------------\nOBSERVACIONES: Turno matutino abierto con fondo estándar. | Cierre: Cierre automático previo\n==========================================\n         MOVIMIENTOS EN TURNO: 2          \n        FIRMA CAJERO / ENCARGADO:         \n\n\n  ______________________________________  \n                  ADMIN                   \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "shift_id": "shift_init_01",
+        "total_cents": 221460
+      }
+    },
+    {
+      "id": "pjob_1791148705085_2u1pqm",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_cashier_01",
+      "printer_name": "Impresora de Cuentas y Tickets Caja",
+      "job_type": "payment_receipt",
+      "title": "Recibo de Pago #4_v4hm14 — Mesa 1",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.085Z",
+      "completed_at": "2026-10-04T21:18:25.085Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n      COMPROBANTE DE PAGO REGISTRADO      \n==========================================\nRECIBO: #4_v4hm14                 09:18 PM\nMESA: Mesa 1               SESION: #ban0gv\nCAJERO: Cajero Roberto           10/4/2026\nPAGO DIRIGIDO A:              [1.1] Carlos\n------------------------------------------\nMETODO DE PAGO:            EFECTIVO (CASH)\nAUTORIZACION / REF:              TICKET_C1\nIMPORTE COBRADO:               $214.60 MXN\n------------------------------------------\nSALDO RESTANTE DE MESA:        $533.60 MXN\n==========================================\nCONSERVE ESTE COMPROBANTE PARA CUALQUIER A\n SISTEMA DIRECTAURANTE POS & DIRECTPRINT  \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "payment_id": "pay_1791148705084_v4hm14",
+        "total_cents": 21460
+      }
+    },
+    {
+      "id": "pjob_1791148705084_ukokqm",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_cashier_01",
+      "printer_name": "Impresora de Cuentas y Tickets Caja",
+      "job_type": "payment_receipt",
+      "title": "Recibo de Pago #4_v4hm14 — Mesa 1",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.084Z",
+      "completed_at": "2026-10-04T21:18:25.084Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n      COMPROBANTE DE PAGO REGISTRADO      \n==========================================\nRECIBO: #4_v4hm14                 09:18 PM\nMESA: Mesa 1               SESION: #ban0gv\nCAJERO: Cajero Roberto           10/4/2026\nPAGO DIRIGIDO A:              [1.1] Carlos\n------------------------------------------\nMETODO DE PAGO:            EFECTIVO (CASH)\nAUTORIZACION / REF:              TICKET_C1\nIMPORTE COBRADO:               $214.60 MXN\n------------------------------------------\nSALDO RESTANTE DE MESA:        $533.60 MXN\n==========================================\nCONSERVE ESTE COMPROBANTE PARA CUALQUIER A\n SISTEMA DIRECTAURANTE POS & DIRECTPRINT  \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "payment_id": "pay_1791148705084_v4hm14",
+        "total_cents": 21460
+      }
+    },
+    {
+      "id": "pjob_1791148705083_rz8ksa",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_cashier_01",
+      "printer_name": "Impresora de Cuentas y Tickets Caja",
+      "job_type": "pre_bill",
+      "title": "Pre-cuenta Mesa 1 (Sesión #ban0gv)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.083Z",
+      "completed_at": "2026-10-04T21:18:25.083Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \nDirectaurante Operadora Gastronómica S.A.P\n      ESTADO DE CUENTA / PRE-CUENTA       \n==========================================\nMESA: Mesa 1               SESION: #ban0gv\nATENDIO: Mesero Sofía             09:18 PM\nFECHA: 10/4/2026         EXPEDIDA EN SALON\n==========================================\n>> COMENSAL [1.1] CARLOS\n------------------------------------------\n1 Boneless BBQ                 $140.00 MXN\n1 Cerveza Nacional Ultra        $45.00 MXN\n   Subtotal Comensal:          $185.00 MXN\n\n>> COMENSAL [1.2] CARLOS\n------------------------------------------\n1 Hamburguesa Clásica Angus    $150.00 MXN\n   Subtotal Comensal:          $150.00 MXN\n\n>> COMENSAL [1.3] LUIS\n------------------------------------------\n2 Burritos Norteños de Res     $220.00 MXN\n1 Michelada Especial            $90.00 MXN\n   Subtotal Comensal:          $310.00 MXN\n\n>> COMENSAL [1.4] ANA\n------------------------------------------\n   (Sin consumos registrados)\n   Subtotal Comensal:            $0.00 MXN\n\n==========================================\nSUBTOTAL CONSOLIDADO:          $645.00 MXN\nI.V.A. TRASLADADO (16%):       $103.20 MXN\n------------------------------------------\nTOTAL A LIQUIDAR:              $748.20 MXN\n==========================================\nLA PROPINA ES SUGERIDA Y OPCIONAL (10% / 1\n        NO INCLUIDA EN ESTE TOTAL         \n       ¡GRACIAS POR SU PREFERENCIA!       \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "total_cents": 74820
+      }
+    },
+    {
+      "id": "pjob_1791148705082_gxsfba",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_bar_01",
+      "printer_name": "Comandera Barra y Coctelería",
+      "job_type": "comanda_bar",
+      "title": "Comanda #001 — BAR (Mesa 1)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.082Z",
+      "completed_at": "2026-10-04T21:18:25.082Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n    *** COMANDA DE BARRA & BEBIDAS ***    \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\n1x CERVEZA NACIONAL ULTRA            [1.1]\n   Comensal: Carlos\n   * NOTA: \"Helada\"\n\n------------------------------------------\n             TOTAL BEBIDAS: 1             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "order_ticket_id": "ord_1791148705054_egl53i",
+        "ticket_number": "Comanda #001",
+        "items_count": 1
+      }
+    },
+    {
+      "id": "pjob_1791148705081_0f38z2",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_kitchen_01",
+      "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+      "job_type": "comanda_kitchen",
+      "title": "Comanda #001 — KITCHEN (Mesa 1)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.081Z",
+      "completed_at": "2026-10-04T21:18:25.081Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n1x BONELESS BBQ                  PENDIENTE\n   --> Para: [1.1 Carlos]\n   * NOTA: \"BIEN DORADOS\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 1       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "order_ticket_id": "ord_1791148705054_egl53i",
+        "ticket_number": "Comanda #001",
+        "items_count": 1
+      }
+    },
+    {
+      "id": "pjob_1791148705081_sg57j1",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_kitchen_01",
+      "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+      "job_type": "test",
+      "title": "Ticket de Prueba — Comandera Cocina Caliente (ESC/POS)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.081Z",
+      "completed_at": "2026-10-04T21:18:25.081Z",
+      "raw_content": "      DIRECTAURANTE DIRECTPRINT v1.0      \n  *** TICKET DE PRUEBA DE IMPRESION ***   \n==========================================\nIMPRESORA: Comandera Cocina Caliente (ESC/POS)\nESTACION:                          KITCHEN\nDIRECCION:                   192.168.1.201\nANCHO PAPEL:                80mm (42 cols)\nFECHA / HORA:                   9:18:25 PM\n------------------------------------------\n          Caracteres de Prueba:           \n  ABCDEFGHIJKLMNÑOPQRSTUVWXYZ 0123456789  \n  abcdefghijklmnñopqrstuvwxyz !@#$%^&*()  \n------------------------------------------\n      ¡COMUNICACION ESC/POS EXITOSA!      \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {}
+    },
+    {
+      "id": "pjob_1791148705079_r3hnb2",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_bar_01",
+      "printer_name": "Comandera Barra y Coctelería",
+      "job_type": "comanda_bar",
+      "title": "Comanda #003 — BAR (Mesa 1)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.079Z",
+      "completed_at": "2026-10-04T21:18:25.079Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n    *** COMANDA DE BARRA & BEBIDAS ***    \n==========================================\nMESA: Mesa 1                  Comanda #003\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\n1x MICHELADA ESPECIAL                [1.3]\n   Comensal: Luis\n\n------------------------------------------\n             TOTAL BEBIDAS: 1             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "order_ticket_id": "ord_1791148705078_fzqfan",
+        "ticket_number": "Comanda #003",
+        "items_count": 1
+      }
+    },
+    {
+      "id": "pjob_1791148705078_imo8ej",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_kitchen_01",
+      "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+      "job_type": "comanda_kitchen",
+      "title": "Comanda #003 — KITCHEN (Mesa 1)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.078Z",
+      "completed_at": "2026-10-04T21:18:25.078Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #003\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n2x BURRITOS NORTEÑOS DE RES      PENDIENTE\n   --> Para: [1.3 Luis]\n   * NOTA: \"SALSA APARTE\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 2       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "order_ticket_id": "ord_1791148705078_fzqfan",
+        "ticket_number": "Comanda #003",
+        "items_count": 1
+      }
+    },
+    {
+      "id": "pjob_1791148705078_7gxg4w",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_kitchen_01",
+      "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+      "job_type": "comanda_kitchen",
+      "title": "Comanda #002 — KITCHEN (Mesa 1)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.078Z",
+      "completed_at": "2026-10-04T21:18:25.078Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #002\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n1x HAMBURGUESA CLÁSICA ANGUS     PENDIENTE\n   --> Para: [1.2 Carlos]\n   * NOTA: \"TÉRMINO MEDIO\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 1       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "order_ticket_id": "ord_1791148705077_4xg1s0",
+        "ticket_number": "Comanda #002",
+        "items_count": 1
+      }
+    },
+    {
+      "id": "pjob_1791148705077_p31zk1",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_bar_01",
+      "printer_name": "Comandera Barra y Coctelería",
+      "job_type": "comanda_bar",
+      "title": "Comanda #001 — BAR (Mesa 1)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.077Z",
+      "completed_at": "2026-10-04T21:18:25.077Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n    *** COMANDA DE BARRA & BEBIDAS ***    \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\n1x CERVEZA NACIONAL ULTRA            [1.1]\n   Comensal: Carlos\n   * NOTA: \"Helada\"\n\n------------------------------------------\n             TOTAL BEBIDAS: 1             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "order_ticket_id": "ord_1791148705054_egl53i",
+        "ticket_number": "Comanda #001",
+        "items_count": 1
+      }
+    },
+    {
+      "id": "pjob_1791148705076_ql8bdc",
+      "restaurant_id": "rest_directaurante_01",
+      "printer_id": "prn_kitchen_01",
+      "printer_name": "Comandera Cocina Caliente (ESC/POS)",
+      "job_type": "comanda_kitchen",
+      "title": "Comanda #001 — KITCHEN (Mesa 1)",
+      "status": "completed",
+      "created_at": "2026-10-04T21:18:25.076Z",
+      "completed_at": "2026-10-04T21:18:25.076Z",
+      "raw_content": "        DIRECTAURANTE GRILL & BAR         \n   *** COMANDA DE PRODUCCION COCINA ***   \n==========================================\nMESA: Mesa 1                  Comanda #001\nMESERO: Mesero Sofía              09:18 PM\n------------------------------------------\nCANT  PRODUCTO / COMENSAL           ESTADO\n------------------------------------------\n1x BONELESS BBQ                  PENDIENTE\n   --> Para: [1.1 Carlos]\n   * NOTA: \"BIEN DORADOS\"\n\n------------------------------------------\n       TOTAL PRODUCTOS EN TICKET: 1       \n             Fecha: 10/4/2026             \n    [ DIRECTPRINT — CORTE AUTOMATICO ]    \n\n\n\n",
+      "metadata": {
+        "table_number": "Mesa 1",
+        "table_session_id": "sess_1791148705054_ban0gv",
+        "order_ticket_id": "ord_1791148705054_egl53i",
+        "ticket_number": "Comanda #001",
+        "items_count": 1
+      }
+    }
+  ],
+  "import_jobs": []
+}
